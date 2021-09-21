@@ -1,0 +1,16 @@
+extends base.pug
+block style 
+    style
+        include ../static/style.css
+        include ../static/thnks.css
+block content   
+    div.container
+        div.card 
+            div.front
+                h1 Plz hover to see your details
+            div.back
+                u#head Your details
+                - var data=contact_details
+                ul
+                    each key,val in data 
+                        li= key

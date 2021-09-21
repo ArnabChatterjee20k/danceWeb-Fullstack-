@@ -1,0 +1,47 @@
+//- index.pug
+//- https://pugjs.org/language/includes.html
+doctype html
+html
+    head
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul 
+                li #[a(href="/") Home]
+                li #[a(href="/") About ]
+                li #[a(href="/") Contact ]
+                li #[a(href="/") Info ]
+        section#introSection
+            //- div#introhead #[h1 Section for Pic]
+            h1 Welcome To ADA
+            div #[p EAT DANCE SLEEP REPEAT] 
+        
+        section#mission
+                h1 Opportunities
+                div.center.cardcenter
+                    div.card-box
+                        h3 Expert Teaching
+                        hr
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsam dolorem molestias voluptates distinctio perspiciatis impedit! Aliquam ex, consectetur quaerat, iste earum dolorum fugit placeat ipsam aut nostrum nisi totam?
+                    div.card-box
+                        h3 Different Forms
+                        hr
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsam dolorem molestias voluptates distinctio perspiciatis impedit! Aliquam ex, consectetur quaerat, iste earum dolorum fugit placeat ipsam aut nostrum nisi totam?
+                    div.card-box
+                        h3 Perfection
+                        hr
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsam dolorem molestias voluptates distinctio perspiciatis impedit! Aliquam ex, consectetur quaerat, iste earum dolorum fugit placeat ipsam aut nostrum nisi totam?
+                        
+        section#sponsorsSection
+            h2 Sponsors
+            hr
+            div.logobox
+                img(src="../static/logo2.png", alt="",class="logo")
+                img(src="../static/logo3.png", alt="",class="logo")
+                img(src="../static/logo4.png", alt="",class="logo")
+        
+        footer#footer 
+            | © ADA | All Rights Reserved
+        script
+            include ../static/script.js

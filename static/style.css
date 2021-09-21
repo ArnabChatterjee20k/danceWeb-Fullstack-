@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#navbar{
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    font-size: 20px ;
+    font-family: 'Comfortaa', cursive;
+    background-color: turquoise;
+    padding: 20px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+}
+#navbar  li a{
+    text-decoration: none;
+    padding: 10px 40px;
+    transition: 0.6s linear;
+}
+#navbar  li a:hover{
+    color: black;
+    text-decoration: underline;
+    
+    text-shadow: 0px 14px 10px chocolate;
+    
+}
+
+#introSection{
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; *//* We cant apply as it is column flex */
+    color: white;
+    height: 400px;
+}
+
+#introSection h1{
+    text-align:center ;
+}
+#introSection p{
+    padding-top: 0.5rem;
+    text-align:center ;
+    font-size: 1rem;
+    text-shadow: 0px 2px 10px #FF0000;
+}
+
+#introSection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: center/cover no-repeat url("../static/bg.jpg");
+    /* background-color: yellow; */
+    filter: blur(7px) saturate(0.4) ;
+    opacity: 0.8;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Mission */
+
+
+#mission{
+    margin-top: 50px;
+    height: 350px;
+    background: rgb(250, 246, 247);
+}
+#mission h1{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    text-shadow: 0px 10px  6px rgb(183, 204, 193), 0px 0px  6px rgb(183, 204, 193),0px -10px  9px rgb(54, 48, 48);
+}
+.center{
+    margin: auto;
+}
+.cardcenter{
+    margin-top:30px;
+}
+.card-box{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 4px rebeccapurple;
+}
+.card-box h3{
+    line-height: 50px;
+    background: rgb(241, 236, 202);
+}
+.card-box p{
+    background: cornsilk;
+}
+
+
+/* Sponsors */
+
+#sponsorsSection{
+    height: 500px;
+    background-color: rgb(252, 244, 241);
+}
+
+#sponsorsSection h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cinzel', serif ;
+
+}
+
+.logobox{
+    height: 120px;
+    max-width: 700px;
+    margin:  auto;
+}
+.logo{
+    height: 110px;
+    /* width: 30%; */
+    margin: 70px 50px;
+}
+
+
+/* Footer */
+#footer{
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: black; */
+}
